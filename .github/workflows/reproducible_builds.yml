@@ -27,9 +27,9 @@ jobs:
         run: nix build --rebuild
       - name: sha256sum output
         run: sha256sum result/bin/teleport
-      #- name: sha256sum check
-      #  run: |
-      #    echo "4d01693ebb01a830a24b70b70ebfec0b313a49fb9c0acbf091d79a4be89b515a *result/bin/teleport" | sha256sum --strict --chec
+      - name: sha256sum check
+        run: |
+          echo "293208b0d4d5a48bff03a43c8b54f1d3b3238e56a236d7d4c2775ad5d3b03274 *result/bin/teleport" | sha256sum --strict --chec
       - run: nix flake check
       - run: nix flake metadata
       - run: nix flake show
