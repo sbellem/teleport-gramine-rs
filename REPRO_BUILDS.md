@@ -36,5 +36,7 @@ Binary is under `result/bin/`
 
 [oxalica's Rust overlay](https://github.com/oxalica/rust-overlay)
 
+## CI
+https://github.com/DeterminateSystems/nix-installer-action?tab=readme-ov-file
 
 ## Troubleshooting

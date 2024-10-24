@@ -27,6 +27,7 @@ jobs:
         run: echo "export PATH=\$PATH:/usr/local/bin:/usr/bin" >> $GITHUB_ENV
       - name: generate manifest and sig
         run: |
+               cargo build --release
                make
                /usr/bin/gramine-sgx-gen-private-key -f
                /usr/bin/gramine-sgx-sign -v --manifest exex.manifest --output exex.sgx
