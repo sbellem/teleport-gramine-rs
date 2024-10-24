@@ -25,7 +25,7 @@ RUN nix build --show-trace
 ## Build with rust
 #RUN cargo build --release
 
-FROM rust:1.75.0 AS chef
+FROM rust:1.79.0 AS chef
 RUN cargo install cargo-chef 
 WORKDIR /usr/src/app
 
