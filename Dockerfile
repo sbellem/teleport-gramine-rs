@@ -9,6 +9,9 @@ COPY abi abi
 COPY templates templates
 RUN nix build --show-trace
 
+FROM scratch as nix-build-output
+COPY --from=nix-build /usr/src/app/result/bin/teleport .
+
 #FROM rust:1.75 as cargo-build
 #RUN apt-get install -y pkg-config libssl-dev
 ## Build just the dependencies (shorcut)

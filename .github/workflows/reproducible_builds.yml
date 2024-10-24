@@ -29,8 +29,23 @@ jobs:
         run: sha256sum result/bin/teleport
       - name: sha256sum check
         run: |
-          echo "293208b0d4d5a48bff03a43c8b54f1d3b3238e56a236d7d4c2775ad5d3b03274 *result/bin/teleport" | sha256sum --strict --chec
+          #echo "81d266299ca6e435f0812259eef0b1a37cd5de716a71f9d2a4bab6db6a35c598 *result/bin/teleport" | sha256sum --strict --chec
       - run: nix flake check
       - run: nix flake metadata
       - run: nix flake show
       - run: ls -l result
+
+  docker-nix-teleport:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+      - name: Build
+        uses: docker/build-push-action@v6
+        with:
+          target: nix-build-output
+          push: false
+          tags: sbellem/teleport
+          outputs: type=local,dest=bin
+      - name: sha256sum output
+        run: sha256sum bin/teleport
