@@ -31044,6 +31044,10 @@ uri = "file:/usr/lib/ssl/certs/2923b3f9.0"
 sha256 = "8d390d4c54f6a4a040b04413f1f002192027c66a2a835741f78a152074584a27"
 
 [[sgx.trusted_files]]
+uri = "file:/usr/lib/ssl/certs/293d6668.0"
+sha256 = "4f7646770766af68fe7074b277d024f50f5cad1dc26449b722beea330cdd8a4a"
+
+[[sgx.trusted_files]]
 uri = "file:/usr/lib/ssl/certs/2ae6433e.0"
 sha256 = "8adefca890c92e6d0877fdcba07655296852217da657026aea69ee547642528c"
 
@@ -31861,7 +31865,7 @@ sha256 = "04846f73d9d0421c60076fd02bad7f0a81a3f11a028d653b0de53290e41dcead"
 
 [[sgx.trusted_files]]
 uri = "file:/usr/lib/ssl/certs/adoptium/cacerts"
-sha256 = "286b44e14b4c51ab6450c8a2351657056a59d399ecb8b9d35b3b2095211926cd"
+sha256 = "ec7b49605668c28bf72a63f8ceb8177f628cb6465f7cd4601b2049861f01dc4b"
 
 [[sgx.trusted_files]]
 uri = "file:/usr/lib/ssl/certs/aee5f10d.0"
@@ -31898,10 +31902,6 @@ sha256 = "8e3f237813d3f3e2f5767bc2a694a7557f84bb79fd60ef1adc25afd0c1fc5ef6"
 [[sgx.trusted_files]]
 uri = "file:/usr/lib/ssl/certs/bf53fb88.0"
 sha256 = "626d330f6a8944fa4245f02f9795668e25a40b29b4cc5206bee73337b7dcd4d5"
-
-[[sgx.trusted_files]]
-uri = "file:/usr/lib/ssl/certs/bff583e5.0"
-sha256 = "0fb15d1a463ebedaa8ea65bf238749231a46dc9cfd2a5f7cbca7484db0bd5d35"
 
 [[sgx.trusted_files]]
 uri = "file:/usr/lib/ssl/certs/c01eb047.0"
@@ -32117,7 +32117,7 @@ sha256 = "c6904218e180fbfb0ed91d81e892c2dd983c4a3404617cb36aeb3a434c3b9df0"
 
 [[sgx.trusted_files]]
 uri = "file:/usr/lib/ssl/certs/ssl-cert-snakeoil.pem"
-sha256 = "0fb15d1a463ebedaa8ea65bf238749231a46dc9cfd2a5f7cbca7484db0bd5d35"
+sha256 = "4f7646770766af68fe7074b277d024f50f5cad1dc26449b722beea330cdd8a4a"
 
 [[sgx.trusted_files]]
 uri = "file:/usr/lib/ssl/certs/vTrus_ECC_Root_CA.pem"
@@ -32226,6 +32226,10 @@ sha256 = "d98f681c3a7dce812b90bf7c68046827f3bf5607357f1e4918c5dc813b359bf1"
 [[sgx.trusted_files]]
 uri = "file:/etc/ssl/certs/2923b3f9.0"
 sha256 = "8d390d4c54f6a4a040b04413f1f002192027c66a2a835741f78a152074584a27"
+
+[[sgx.trusted_files]]
+uri = "file:/etc/ssl/certs/293d6668.0"
+sha256 = "4f7646770766af68fe7074b277d024f50f5cad1dc26449b722beea330cdd8a4a"
 
 [[sgx.trusted_files]]
 uri = "file:/etc/ssl/certs/2ae6433e.0"
@@ -33045,7 +33049,7 @@ sha256 = "04846f73d9d0421c60076fd02bad7f0a81a3f11a028d653b0de53290e41dcead"
 
 [[sgx.trusted_files]]
 uri = "file:/etc/ssl/certs/adoptium/cacerts"
-sha256 = "286b44e14b4c51ab6450c8a2351657056a59d399ecb8b9d35b3b2095211926cd"
+sha256 = "ec7b49605668c28bf72a63f8ceb8177f628cb6465f7cd4601b2049861f01dc4b"
 
 [[sgx.trusted_files]]
 uri = "file:/etc/ssl/certs/aee5f10d.0"
@@ -33082,10 +33086,6 @@ sha256 = "8e3f237813d3f3e2f5767bc2a694a7557f84bb79fd60ef1adc25afd0c1fc5ef6"
 [[sgx.trusted_files]]
 uri = "file:/etc/ssl/certs/bf53fb88.0"
 sha256 = "626d330f6a8944fa4245f02f9795668e25a40b29b4cc5206bee73337b7dcd4d5"
-
-[[sgx.trusted_files]]
-uri = "file:/etc/ssl/certs/bff583e5.0"
-sha256 = "0fb15d1a463ebedaa8ea65bf238749231a46dc9cfd2a5f7cbca7484db0bd5d35"
 
 [[sgx.trusted_files]]
 uri = "file:/etc/ssl/certs/c01eb047.0"
@@ -33301,7 +33301,7 @@ sha256 = "c6904218e180fbfb0ed91d81e892c2dd983c4a3404617cb36aeb3a434c3b9df0"
 
 [[sgx.trusted_files]]
 uri = "file:/etc/ssl/certs/ssl-cert-snakeoil.pem"
-sha256 = "0fb15d1a463ebedaa8ea65bf238749231a46dc9cfd2a5f7cbca7484db0bd5d35"
+sha256 = "4f7646770766af68fe7074b277d024f50f5cad1dc26449b722beea330cdd8a4a"
 
 [[sgx.trusted_files]]
 uri = "file:/etc/ssl/certs/vTrus_ECC_Root_CA.pem"
