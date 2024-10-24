@@ -16,7 +16,7 @@ concurrency:
 
 jobs:
   nix-teleport:
-    name: Build
+    name: Build teleport with nix
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -37,6 +37,7 @@ jobs:
 
   docker-nix-teleport:
     runs-on: ubuntu-latest
+    name: Build teleport with nix in docker
     steps:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
