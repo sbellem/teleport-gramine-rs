@@ -2,8 +2,8 @@
   description = "teleport";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
-    rust-overlay.url = "github:oxalica/rust-overlay";
+    nixpkgs.url = "github:nixos/nixpkgs?rev=63dacb46bf939521bdc93981b4cbb7ecb58427a0";
+    rust-overlay.url = "github:oxalica/rust-overlay?rev=29b1275740d9283467b8117499ec8cbb35250584";
   };
 
   outputs = { self, nixpkgs, rust-overlay }:
