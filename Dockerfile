@@ -1,3 +1,10 @@
+FROM  nixpkgs/nix-flakes AS nix-build
+WORKDIR /usr/src/app
+COPY flake.lock flake.nix Cargo.lock Cargo.toml rust-toolchain .
+COPY src src
+RUN nix build --show-trace
+
+
 FROM gramineproject/gramine:1.7-jammy AS builder
 
 RUN apt-get update && apt-get install -y jq build-essential libclang-dev
