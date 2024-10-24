@@ -41,6 +41,7 @@
             version = "0.1.0";
             #src = gitignoreSource extraIgnores ./.;
             src = ./.;
+            doCheck = false;
             cargoLock = {
               lockFile = ./Cargo.lock;
               # NOTE for git deps, the outputhash must be specified

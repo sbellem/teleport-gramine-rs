@@ -1,3 +1,5 @@
+# Use cachix to speed up repeated builds in same container (?)
+# FROM  nixpkgs/cachix-flakes AS nix-build
 FROM  nixpkgs/nix-flakes AS nix-build
 WORKDIR /usr/src/app
 COPY flake.lock flake.nix Cargo.lock Cargo.toml rust-toolchain .

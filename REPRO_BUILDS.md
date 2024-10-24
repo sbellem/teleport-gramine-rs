@@ -10,7 +10,7 @@ a basis, which has nix flakes enabled by default.
 docker build --tag nix-teleport --target nix-build .
 ```
 
-## Development & Troubleshooting
+## Development Environment with Nix
 See https://docs.determinate.systems/getting-started
 
 1. Installing nix
@@ -37,3 +37,4 @@ Binary is under `result/bin/`
 [oxalica's Rust overlay](https://github.com/oxalica/rust-overlay)
 
 
+## Troubleshooting
