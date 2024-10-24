@@ -34,6 +34,12 @@
             rustPlatform = pkgs.makeRustPlatform {
               cargo = pkgs.rustToolchain;
               rustc = pkgs.rustToolchain;
+              nativeBuildInputs = with pkgs; [
+                pkg-config
+              ];
+              buildInputs = with pkgs; [
+                openssl
+              ];
             };
           in
           rustPlatform.buildRustPackage {
@@ -53,14 +59,6 @@
               allowBuiltinFetchGit = true;
               #
               # see https://github.com/NixOS/nixpkgs/blob/master/doc/languages-frameworks/rust.section.md#importing-a-cargolock-file-importing-a-cargolock-file
-  
-              nativeBuildInputs = with pkgs; [
-                pkg-config
-              ];
-
-              buildInputs = with pkgs; [
-                openssl
-              ];
             };
           };
         });
