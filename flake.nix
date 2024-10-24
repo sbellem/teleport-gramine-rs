@@ -34,17 +34,12 @@
             rustPlatform = pkgs.makeRustPlatform {
               cargo = pkgs.rustToolchain;
               rustc = pkgs.rustToolchain;
-              nativeBuildInputs = with pkgs; [
-                pkg-config
-              ];
-              buildInputs = with pkgs; [
-                openssl
-              ];
             };
           in
           rustPlatform.buildRustPackage {
             name = "teleport";
             version = "0.1.0";
+            #src = gitignoreSource extraIgnores ./.;
             src = ./.;
             cargoLock = {
               lockFile = ./Cargo.lock;
@@ -60,6 +55,14 @@
               #
               # see https://github.com/NixOS/nixpkgs/blob/master/doc/languages-frameworks/rust.section.md#importing-a-cargolock-file-importing-a-cargolock-file
             };
+
+            nativeBuildInputs = with pkgs; [
+              pkg-config
+            ];
+            buildInputs = with pkgs; [
+              openssl
+            ];
+
           };
         });
 
