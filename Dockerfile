@@ -2,6 +2,9 @@ FROM  nixpkgs/nix-flakes AS nix-build
 WORKDIR /usr/src/app
 COPY flake.lock flake.nix Cargo.lock Cargo.toml rust-toolchain .
 COPY src src
+RUN rm src/bin/redeem.rs
+COPY abi abi
+COPY templates templates
 RUN nix build --show-trace
 
 

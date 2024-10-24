@@ -71,6 +71,12 @@
           packages = (with pkgs; [
             rustToolchain
           ]);
+          nativeBuildInputs = with pkgs; [
+            pkg-config
+          ];
+          buildInputs = with pkgs; [
+            openssl
+          ];
         };
       });
 
