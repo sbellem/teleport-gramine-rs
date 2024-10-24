@@ -29,4 +29,8 @@ jobs:
         run: sha256sum result/bin/teleport
       - name: sha256sum check
         run: |
-        echo "4d01693ebb01a830a24b70b70ebfec0b313a49fb9c0acbf091d79a4be89b515a *result/bin/teleport" | sha256sum --strict --chec
+          echo "4d01693ebb01a830a24b70b70ebfec0b313a49fb9c0acbf091d79a4be89b515a *result/bin/teleport" | sha256sum --strict --chec
+      - run: nix flake check
+      - run: nix flake metadata
+      - run: nix flake show
+      - run: ls -l result
